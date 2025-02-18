@@ -4,7 +4,7 @@ import re
 import csv
 
 file_path = "MoMo-Data-Analysis/Backend/modified_sms_v2.xml"
-csv_file_path = "MoMo-Data-Analysis/Backend/modified_sms_v2.xml"
+csv_file_path = "MoMo-Data-Analysis/Backend/extracted_transactions_final.csv"
 
 tree = ET.parse(file_path)
 root = tree.getroot()
