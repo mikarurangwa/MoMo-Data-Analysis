@@ -3,8 +3,8 @@ import pandas as pd
 import re
 import csv
 
-file_path = "/workspaces/MoMo-Data-Analysis/mnt/data/modified_sms_v2.xml"
-csv_file_path = "/workspaces/MoMo-Data-Analysis/mnt/data/extracted_transactions_final.csv"
+file_path = "C:/Users/User/Desktop/MoMo-Data-Analysis/mnt/data/modified_sms_v2.xml"
+csv_file_path = "C:/Users/User/Desktop/MoMo-Data-Analysis/mnt/data/modified_sms_v2.xml"
 
 tree = ET.parse(file_path)
 root = tree.getroot()
@@ -15,15 +15,12 @@ for sms in root.findall('sms'):
     body = sms.get('body')
     date = sms.get('readable_date')
 
-    # Extract Transaction ID
     transaction_id_match = re.search(r'TxId: (\d+)', body)
     transaction_id = transaction_id_match.group(1) if transaction_id_match else ""
 
-    # Extract Amount
     amount_match = re.search(r'(\d{1,3}(?:,\d{3})*|\d+) RWF', body)
     amount = amount_match.group(1) if amount_match else ""
 
-    # Categorize
     text_lower = body.lower()
     if "dear customer, your mtn momo application one-time password" in text_lower:
         category = "MTN SMS"
