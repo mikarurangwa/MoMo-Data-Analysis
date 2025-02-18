@@ -2,7 +2,7 @@ import csv
 import mysql.connector
 from datetime import datetime
 
-CSV_FILE_PATH = "extracted_transactions_final.csv"
+CSV_FILE_PATH = "MoMo-Data-Analysis/Backend/extracted_transactions_final.csv"
 
 conn = mysql.connector.connect(
     host="localhost",
