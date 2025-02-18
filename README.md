@@ -25,10 +25,9 @@ Responsive Design: Works seamlessly on desktops, tablets, and mobile devices.
 2. CSS
 
 **Backend:**
-1. Python (Flask)
-2. MySQL (Data storage)
-3. Pandas (Data processing)
-4. XML Parsing (Extracting SMS data)
+1. MySQL (Data storage)
+2. Pandas (Data processing)
+3. XML Parsing (Extracting SMS data)
 
 **Future Improvements**
 
