@@ -3,8 +3,8 @@ import pandas as pd
 import re
 import csv
 
-file_path = "C:/Users/User/Desktop/MoMo-Data-Analysis/mnt/data/modified_sms_v2.xml"
-csv_file_path = "C:/Users/User/Desktop/MoMo-Data-Analysis/mnt/data/modified_sms_v2.xml"
+file_path = "MoMo-Data-Analysis/mnt/data/modified_sms_v2.xml"
+csv_file_path = "MoMo-Data-Analysis/mnt/data/modified_sms_v2.xml"
 
 tree = ET.parse(file_path)
 root = tree.getroot()
